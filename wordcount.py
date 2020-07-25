@@ -22,4 +22,8 @@ def word_count(filename):
                 word_dict[word] = word_dict.get(word, 0) + 1
     return word_dict
 
-print(word_count("test.txt"))
+wordcount = word_count("test.txt")
+
+for word, number in wordcount.items():
+    print(f"{word} {number}")
+    
